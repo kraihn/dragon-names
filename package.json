@@ -1,0 +1,36 @@
+{
+  "name": "dragon-names",
+  "version": "1.0.0",
+  "description": "Get awesome dragon names",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kraihn/dragon-names"
+  },
+  "bin": {
+    "dragon-names": "cli.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jared Dickson <code@jareddickson.com> (http://jareddickson.com)",
+  "license": "MIT",
+  "dependencies": {
+    "meow": "^2.1.0",
+    "unique-random": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/kraihn/dragon-names/issues"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "data"
+  ],
+  "homepage": "https://github.com/kraihn/dragon-names",
+  "devDependencies": {},
+  "keywords": [
+    "dragon",
+    "dragons"
+  ]
+}
