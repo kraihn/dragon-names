@@ -1,4 +1,4 @@
-# dragon-names
+# dragon-names [![Build Status](https://secure.travis-ci.org/kraihn/dragon-names.png?branch=master)](https://travis-ci.org/kraihn/dragon-names)
 
 > Get awesome dragon names
 
