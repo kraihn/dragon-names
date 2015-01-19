@@ -46,6 +46,7 @@ exports.film = filmDragonNames;
 exports.game = gameDragonNames;
 exports.literature = literatureDragonNames;
 exports.television = televisionDragonNames;
+exports.all = allDragonNames;
 
 exports.animatedRandom = function () {
     return animatedDragonNames[animatedRandom()];
