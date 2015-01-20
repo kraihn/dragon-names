@@ -31,9 +31,5 @@ describe('dragon-names has no duplicates', function () {
     it('television dragon names has no duplicates', function () {
         assert(this.dragonNames.television.length === _.uniq(this.dragonNames.television).length);
     });
-
-    it('all dragon names has no duplicates ', function() {
-        assert(this.dragonNames.all.length === _.uniq(this.dragonNames.all).length, _.chain(this.dragonNames.all).groupBy().filter(function(item) { return item.length > 1; }).flatten().uniq().value());
-    });
 });
 
