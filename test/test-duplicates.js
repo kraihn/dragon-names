@@ -33,7 +33,7 @@ describe('dragon-names has no duplicates', function () {
     });
 
     it('all dragon names has no duplicates ', function() {
-        assert(this.dragonNames.all.length === _.uniq(this.dragonNames.all).length, _.chain(dragonNames.all).groupBy().filter(function(item) { return item.length > 1; }).flatten().uniq().value());
+        assert(this.dragonNames.all.length === _.uniq(this.dragonNames.all).length, _.chain(this.dragonNames.all).groupBy().filter(function(item) { return item.length > 1; }).flatten().uniq().value());
     });
 });
 
