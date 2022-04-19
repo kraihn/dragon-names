@@ -18,7 +18,7 @@
   "dependencies": {
     "lodash": "^2.4.1",
     "meow": "^2.1.0",
-    "unique-random": "^1.0.0"
+    "unique-random": "^3.0.0"
   },
   "bugs": {
     "url": "https://github.com/kraihn/dragon-names/issues"
