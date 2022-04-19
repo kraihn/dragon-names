@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^2.4.1",
-    "meow": "^2.1.0",
+    "meow": "^10.1.2",
     "unique-random": "^3.0.0"
   },
   "bugs": {
