@@ -1,10 +1,12 @@
 'use strict';
-var assert = require('assert');
+import assert from 'assert';
+import * as dragonNames from '../index.js';
 
 describe('dragon-names loaded', function () {
 
     beforeEach(function () {
-        this.dragonNames = require('../');
+        this.dragonNames = dragonNames;
+        console.log(this.dragonNames);
     });
 
     it('has animated dragon names', function () {

@@ -1,77 +1,84 @@
 'use strict';
-var uniqueRandom = require('unique-random'),
-    animatedDragonNames = require('./data/animated-dragon-names.json'),
-    comicDragonNames = require('./data/comic-dragon-names.json'),
-    filmDragonNames = require('./data/film-dragon-names.json'),
-    gameDragonNames = require('./data/game-dragon-names.json'),
-    literatureDragonNames = require('./data/literature-dragon-names.json'),
-    televisionDragonNames = require('./data/television-dragon-names.json');
+import * as animatedDragonNames from './data/animated-dragon-names.json' assert{type: 'json'};
+import * as comicDragonNames from './data/comic-dragon-names.json' assert{type: 'json'};
+import * as filmDragonNames from './data/film-dragon-names.json' assert{type: 'json'};
+import * as gameDragonNames from './data/game-dragon-names.json' assert{type: 'json'};
+import * as literatureDragonNames from './data/literature-dragon-names.json' assert{type: 'json'};
+import * as televisionDragonNames from './data/television-dragon-names.json' assert{type: 'json'};
+import uniqueRandom from 'unique-random';
 var allDragonNames = [];
 
-animatedDragonNames.forEach(function (name) {
+animatedDragonNames.default.forEach(function (name) {
     allDragonNames.push(name);
 });
 
-comicDragonNames.forEach(function (name) {
+comicDragonNames.default.forEach(function (name) {
     allDragonNames.push(name);
 });
 
-filmDragonNames.forEach(function (name) {
+filmDragonNames.default.forEach(function (name) {
     allDragonNames.push(name);
 });
 
-gameDragonNames.forEach(function (name) {
+gameDragonNames.default.forEach(function (name) {
     allDragonNames.push(name);
 });
 
-literatureDragonNames.forEach(function (name) {
+literatureDragonNames.default.forEach(function (name) {
     allDragonNames.push(name);
 });
 
-televisionDragonNames.forEach(function (name) {
+televisionDragonNames.default.forEach(function (name) {
     allDragonNames.push(name);
 });
 
-var animatedRandom = uniqueRandom(0, animatedDragonNames.length - 1);
-var comicRandom = uniqueRandom(0, comicDragonNames.length - 1);
-var filmRandom = uniqueRandom(0, filmDragonNames.length - 1);
-var gameRandom = uniqueRandom(0, gameDragonNames.length - 1);
-var literatureRandom = uniqueRandom(0, literatureDragonNames.length - 1);
-var televisionRandom = uniqueRandom(0, televisionDragonNames.length - 1);
+var animatedRandom = uniqueRandom(0, animatedDragonNames.default.length- 1);
+var comicRandom = uniqueRandom(0, comicDragonNames.default.length - 1);
+var filmRandom = uniqueRandom(0, filmDragonNames.default.length - 1);
+var gameRandom = uniqueRandom(0, gameDragonNames.default.length - 1);
+var literatureRandom = uniqueRandom(0, literatureDragonNames.default.length - 1);
+var televisionRandom = uniqueRandom(0, televisionDragonNames.default.length - 1);
 var allRandom = uniqueRandom(0, allDragonNames.length - 1);
 
-exports.animated = animatedDragonNames;
-exports.comic = comicDragonNames;
-exports.film = filmDragonNames;
-exports.game = gameDragonNames;
-exports.literature = literatureDragonNames;
-exports.television = televisionDragonNames;
-exports.all = allDragonNames;
+export const animated = animatedDragonNames.default;
+export const comic = comicDragonNames.default;
+export const film = filmDragonNames.default;
+export const game = gameDragonNames.default;
+export const literature = literatureDragonNames.default;
+export const television = televisionDragonNames.default;
+export const all = allDragonNames;
 
-exports.animatedRandom = function () {
+const _animatedRandom = function () {
     return animatedDragonNames[animatedRandom()];
 };
+export { _animatedRandom as animatedRandom };
 
-exports.comicRandom = function () {
+const _comicRandom = function () {
     return comicDragonNames[comicRandom()];
 };
+export { _comicRandom as comicRandom };
 
-exports.filmRandom = function () {
+const _filmRandom = function () {
     return filmDragonNames[filmRandom()];
 };
+export { _filmRandom as filmRandom };
 
-exports.gameRandom = function () {
+const _gameRandom = function () {
     return gameDragonNames[gameRandom()];
 };
+export { _gameRandom as gameRandom };
 
-exports.literatureRandom = function () {
+const _literatureRandom = function () {
     return literatureDragonNames[literatureRandom()];
 };
+export { _literatureRandom as literatureRandom };
 
-exports.televisionRandom = function () {
+const _televisionRandom = function () {
     return televisionDragonNames[televisionRandom()];
 };
+export { _televisionRandom as televisionRandom };
 
-exports.allRandom = function () {
+const _allRandom = function () {
     return allDragonNames[allRandom()];
 };
+export { _allRandom as allRandom };

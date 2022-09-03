@@ -35,5 +35,6 @@
   "keywords": [
     "dragon",
     "dragons"
-  ]
+  ],
+  "type": "module"
 }

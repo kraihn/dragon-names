@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow'),
-    dragonNames = require('./index.js');
+import meow from 'meow';
+import dragonNames from './index.js';
 
 var cli = meow({
     help: [
